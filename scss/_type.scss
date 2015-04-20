@@ -1,0 +1,91 @@
+// Welcome, Food, Drinks, Location
+h1 {
+	font-family: 'Lobster', cursive;
+	color: $heading-gold;
+	padding: 1% 0 0;
+	font-size: 30px;
+	@include breakpoint(small) { font-size: 7vw; }
+	@include breakpoint(medium) { font-size: 6vw; }
+	@include breakpoint(large) { font-size: 5vw; }
+	@include breakpoint(xl) { font-size: 4.1vw; }
+	@include breakpoint(xxl) { font-size: 3.3vw; }
+}
+
+// Menu Items text, also Heading for News section
+.heading {
+	font-family: 'Lobster', cursive;
+	color: $dull-red;
+	line-height: 3vw;
+	font-size: 20px;
+	@include breakpoint(small) { font-size: 4.2vw; line-height: 5vw; }
+	@include breakpoint(medium) { font-size: 3.8vw; line-height: 5vw; }
+	@include breakpoint(large) { font-size: 3.3vw; line-height: 4.5vw; }
+	@include breakpoint(xl) { font-size: 2.65vw; line-height: 4vw; }
+	@include breakpoint(xxl) { font-size: 2vw; line-height: 2.6vw; }
+}
+
+.sub-heading {
+	font-family: 'Exo', sans-serif;
+	line-height: 3vw;
+	color: $dull-orange;
+	font-weight: 600;
+	font-style: italic;
+	letter-spacing: 0.01em;
+	@include breakpoint(small) { font-size: 2.1vw; line-height: 3.2vw; }
+	@include breakpoint(medium) { font-size: 2vw; line-height: 2.7vw; }
+	@include breakpoint(large) { font-size: 1.6vw; line-height: 2.7vw; }
+	@include breakpoint(xl) { font-size: 1.2vw; line-height: 2vw; }
+	@include breakpoint(xxl) { font-size: 1vw; line-height: 1.3vw; }
+}
+
+// "Toppings" in the Food Menu section
+.food-sub-heading {
+	font-family: 'Lobster', cursive;
+	color: $dull-orange;
+	line-height: 3vw;
+	padding: 3px 0;
+	font-size: 20px;
+	@include breakpoint(small) { font-size: 2.9vw; line-height: 3.3vw; }
+	@include breakpoint(medium) { font-size: 2.7vw; line-height: 2.9vw; }
+	@include breakpoint(large) { font-size: 2.4vw; line-height: 2.8vw; }
+	@include breakpoint(xl) { font-size: 1.9vw; line-height: 2.5vw; }
+	@include breakpoint(xxl) { font-size: 1.5vw; line-height: 2.3vw; }
+}
+
+// News Section sub text (top of page)
+.news-heading {
+	font-family: 'Exo', sans-serif;
+	color: $dull-orange;
+	font-weight: 600;
+	font-style: italic;
+	letter-spacing: 0.01em;
+	line-height: 3vw;
+	@include breakpoint(small) { font-size: 2.7vw; line-height: 3.3vw; }
+	@include breakpoint(medium) { font-size: 2.3vw; line-height: 2.9vw; }
+	@include breakpoint(large) { font-size: 1.8vw; line-height: 2.8vw; }
+	@include breakpoint(xl) { font-size: 1.3vw; line-height: 2.5vw; }
+	@include breakpoint(xxl) { font-size: 1.2vw; line-height: 2.3vw; }
+}
+
+// Slogal "craft beer, tasty..." (top of page)
+h2 {
+	font-family: 'Lobster', cursive;
+	color: $heading-gold;
+	line-height: 3vw;
+	padding: 3px 0;
+	font-size: 20px;
+	@include breakpoint(small) { font-size: 4.2vw; line-height: 5vw; }
+	@include breakpoint(medium) { font-size: 3.8vw; line-height: 5vw; }
+	@include breakpoint(large) { font-size: 3.3vw; line-height: 4.5vw; }
+	@include breakpoint(xl) { font-size: 2.65vw; line-height: 4vw; }
+	@include breakpoint(xxl) { font-size: 2vw; line-height: 2.6vw; }
+}
+
+
+
+.gold {	color: $heading-gold; }
+.dull-red { color: $dull-red; }
+.dull-orange { color: $dull-orange; }
+.orange { color: $orange; }
+.light-orange { color: $light-orange; }
+.brown {color: $brown;}

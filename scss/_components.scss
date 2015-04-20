@@ -1,0 +1,136 @@
+// Logo (top of the bar)
+// ---------------------
+.bar-top {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	display: block;
+}
+
+// Body
+// All content blocks go in this bar-block
+// ---------------------------------------
+.bar-block {
+	max-width: 910px;
+	margin: 0% 4.5% 0%;
+	padding: 5% 5%;
+	background-color: $bar-brown;
+}
+
+.content-sizing {
+	@include breakpoint(small) { margin: 0 9px; }
+	@include breakpoint(medium) { margin: 0 24px; }
+	@include breakpoint(large) { margin: 0 30px; }
+	@include breakpoint(xl) { margin: 0 25px; }
+	@include breakpoint(xxl) { margin: 0 25px; }
+}
+
+
+// Content Blocks
+// --------------
+.content-container {
+	position: relative;
+	max-width: 700px;
+	background-color: #f6f4ed;
+	margin: auto 2%;
+	padding: 2% 0;
+	margin: 0 auto;
+}
+// Corners for Content Block
+.top-left {
+	width: 2vw;
+	height: 2vw;
+	background-color: $bar-brown;
+	position: absolute;
+	left: 0;
+	top: 0;
+	@include breakpoint(xl) { width: 1.6vw; height: 1.6vw; }
+	@include breakpoint(xxl) { width: 1.6vw; height: 1.6vw; }
+}
+.top-right {
+	width: 2vw;
+	height: 2vw;
+	background-color: $bar-brown;
+	position: absolute;
+	right: 0;
+	top: 0;
+	@include breakpoint(xl) { width: 1.6vw; height: 1.6vw; }
+	@include breakpoint(xxl) { width: 1.6vw; height: 1.6vw; }
+}
+.bottom-left {
+	width: 2vw;
+	height: 2vw;
+	background-color: $bar-brown;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	@include breakpoint(xl) { width: 1.6vw; height: 1.6vw; }
+	@include breakpoint(xxl) { width: 1.6vw; height: 1.6vw; }
+}
+.bottom-right {
+	width: 2vw;
+	height: 2vw;
+	background-color: $bar-brown;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	@include breakpoint(xl) { width: 1.6vw; height: 1.6vw; }
+	@include breakpoint(xxl) { width: 1.6vw; height: 1.6vw; }
+}
+
+// NEWS SECTION
+// ------------
+.news-imgs {
+	display: inline-block;
+	width: 25%;
+	border-radius: 50%;
+	border-color: $orange;
+	border-style: solid;
+	@include breakpoint(small) { border-width: 3px; }
+	@include breakpoint(medium) { border-width: 4px; }
+	@include breakpoint(large) { border-width: 5px; }	
+	@include breakpoint(xl) { border-width: 6px; }
+	@include breakpoint(xxl) { border-width: 6.5px; }
+}
+.news-img-left {
+	border-color: $dull-orange;
+}
+.news-img-center {
+	border-color: $orange;
+	width: 22%;
+	margin: 0 1.5%;
+}
+.news-img-center {
+	border-color: $dull-red;
+}
+// TV iframe embed - responsive scaling
+// ------------------------------------
+.embed-container {
+    position: relative;
+    padding-bottom: 63%; 
+   
+    height: 0;
+    overflow: hidden;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+		padding: 0 20px;	
+}
+.embed-scale {
+	margin: auto 5%;
+}
+.bottle-container {
+/*		-webkit-perspective: 700;
+		perspective: 700;*/
+}
+.bottle-perspective {
+	-webkit-transform: rotate3d(1, 0, 0, -2deg);
+	transform: rotate3d(1, 0, 0, -2deg);
+}
+	
