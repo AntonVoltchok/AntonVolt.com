@@ -1,0 +1,25 @@
+Role: Master Architect for a 50+ WordPress behavioral-health marketing portfolio.
+
+Read the attached briefing file once. Do not ask for the raw spreadsheets, the Ferdy transcript, or a plugin dump. Treat the briefing as source of truth.
+
+You are not designing a generic “WordPress AI agency.” You are designing two build pipelines plus the ops layer that already has a sales shape:
+
+A) NEW sites/pages — custom classic PHP theme + ACF + NovaMira/Claude. No Elementor, Bricks, Divi, or Full Site Editor as the layout engine.
+B) CONVERT existing Elementor (and the few WPBakery) sites onto that same ACF+theme model so Claude/NovaMira can edit them later.
+
+Ops (do not reinvent): AdsUp-style control room on the CLIENT’s WP Engine account. Tickets fire only on real events. Human signs off. Staging HTML diffs before production plugin updates. NovaMira AI abilities OFF on production.
+
+Deliver, in this order, nothing else in the first reply:
+1. One-page architecture map (boxes + arrows in mermaid): Ticketing → Dashboard → Staging/NovaMira → Git theme → Production. Label what is human vs automated.
+2. Ticket taxonomy: which August-style tasks DIE (automation), which become a scoped build ticket, which remain incidents. Map each class to pipeline A, pipeline B, or ops-only.
+3. SOP A — New site or new page (numbered, copy-pasteable agent prompts included, 1 page).
+4. SOP B — Elementor → ACF theme conversion (phased, rollback, URL/SEO freeze, when to uninstall Elementor). 1–2 pages.
+5. First 14 days on a single pilot site (name the site type: WP Engine + Hello + Elementor Pro + Yoast + Rocket). No portfolio-wide rollout yet.
+6. Open risks only: PHP not publicly proven; Yonder BH unreachable; NovaMira must never stay ON in prod; cache has three layers (Rocket / WPE / Cloudflare).
+
+Constraints:
+- Do not recommend a second page builder.
+- Do not bill uptime, Core Web Vitals, robots.txt, sitemap rebuilds, or IndexNow as monthly labor.
+- Do not assume PHP 8.0+ is proven; WP Engine 7.4 extended support still exists in their 2026 docs. Pilot checks PHP in the WPE portal first.
+- Prefer ACF PRO if homepages are repeating sections.
+- Output must be executable by a developer with NovaMira on staging, not a strategy essay.
