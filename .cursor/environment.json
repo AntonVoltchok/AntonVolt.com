@@ -1,0 +1,20 @@
+{
+  "name": "AntonVolt.com static site",
+  "install": "npm install && npm run build",
+  "terminals": [
+    {
+      "name": "sass-watch",
+      "command": "npm run watch"
+    },
+    {
+      "name": "web-server",
+      "command": "npm run serve"
+    }
+  ],
+  "ports": [
+    {
+      "name": "web",
+      "port": 8000
+    }
+  ]
+}
