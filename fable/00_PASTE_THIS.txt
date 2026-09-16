@@ -24,7 +24,7 @@ Output only:
    - Your recommended default if I skip it
    Do not ask things the briefing already answered (WP 6.9+ on 50/51, modal Elementor stack, PHP not proven publicly, Yonder unreachable).
 
-   Ask at least: ticketing system of record; who signs off (me vs client vs offshore); whether ACF PRO is already licensed; whether a shared design system exists or each brand is unique; whether conversion is “looks identical” or “good enough + faster edits”; pilot site name if I have one; if they know real hours for one Elementor evergreen page today (if not, you will guess 2–6h).
+   Ask at least: ticketing system of record; who signs off (me vs client vs offshore); whether ACF PRO is already licensed; whether a shared design system exists or each brand is unique; whether conversion is “looks identical” or “good enough + faster edits”; pilot site name if I have one; if they know real hours for one Elementor evergreen page today (if not, you will guess 2–6h); buy+glue (Linear/GitHub + UptimeRobot/Better Stack + thin WP plugin) vs custom everything for AdsUp (default buy+glue).
 
 3) A 5-line “if you reply with only ‘go’, I will assume: …” using your defaults.
 
@@ -38,10 +38,11 @@ Then deliver, in order, nothing else:
 3. SOP A — new site or new page (numbered, copy-pasteable agent prompts, 1 page).
 4. SOP B — Elementor → ACF conversion (phased, rollback, URL/SEO freeze, when to uninstall Elementor). 1–2 pages.
 5. First 14 days on one pilot (WPE + Hello + Elementor Pro + Yoast + Rocket unless you named a better pilot). No 50-site rollout.
-6. Hours model (required). Two tables, LOW / MID / HIGH hours. Label every number GUESS.
-   Table 1 — Current (client/offshore now, work I want to take over). Use August **task counts**, not Zoho Duration/Work-hours (those look like days×24 and are unusable). Hours per class = count × guessed hours per ticket. Split rows into REAL labor vs PADDED calendar lines (uptime, CWV, robots, sitemap, IndexNow). Give a one-month portfolio total.
-   Table 2 — Future (AdsUp). Same classes after automation + pipelines. Plus one-time: dashboard build; SOP B hours per site (first site vs site 10 once a parent theme exists); SOP A hours per new page after a site is converted. Monthly residual tickets vs one-time transformation.
-   Then 5 bullets: what I can honestly quote a client this month vs what needs 90 days of real closed tickets. Do not recycle “30–50%” as a calculated figure; if you use a range, derive it from these tables.
+6. Hours model (required). THREE tables, LOW / MID / HIGH. Label every number GUESS. Do not mix the three.
+   Table 1 — Current client/offshore labor (work I want to take over). August **task counts**, not Zoho Duration/Work-hours (days×24, unusable). Hours = count × guessed hours per ticket. Split REAL labor vs PADDED calendar lines (uptime, CWV, robots, sitemap, IndexNow). One-month portfolio total.
+   Table 2 — Future CLIENT work after AdsUp exists. Same August classes once monitoring/tickets/pipelines are live. SOP B hours per site (first vs site 10). SOP A hours per new page on a converted theme. Monthly residual tickets. This is NOT my time to build AdsUp. Do not put dashboard/monitoring/ticketing build hours here.
+   Table 3 — MY time to IMPLEMENT AdsUp (WP admin control room, monitoring, ticketing, cache purge, plugin diffs). Labor hours for me + AI. Rows at least: WPE install + WP admin plugin shell/roles; uptime + alerts (call/SMS/Slack); SSL/domain expiry; CVE / security-baseline gaps; malware + blacklist; 3-layer cache purge (Rocket + WPE + Cloudflare); plugin updates on staging + HTML diff + human sign-off; ticketing (intake, Review queue, estimate-before-work, invoice=closed only); broken-link / redirect list. Split BUY (UptimeRobot/Better Stack, Linear/GitHub, MainWP) vs BUILD on each row. Two totals: MVP (≈5 sites: uptime + tickets + purge + baseline list) vs full sold spec (50 sites + HTML-diff plugin manager). Also calendar elapsed if I am one person using Claude/Cursor (hours ≠ weeks). Do NOT put 50-site Elementor conversions in Table 3.
+   Then 5 bullets: what I can honestly quote a client this month vs what needs 90 days of closed tickets. Derive any % from Tables 1–2, not a recycled “30–50%.” One extra bullet: when Table 3 MVP is done enough to start taking Table 1 work.
 7. Open risks.
 
 Hard constraints unless you successfully challenged them and I agreed:
@@ -70,7 +71,7 @@ The file must be enough to start a NEW Fable 5.1 chat with no other attachments 
 4. The live architecture (mermaid, current version)
 5. SOP A and SOP B as they stand now (full text, not “see above”)
 6. Pilot 14-day plan if written
-7. Hours tables (current vs future) if written
+7. Hours tables (1 current / 2 future client / 3 my AdsUp build) if written
 8. Risks and explicit non-goals
 9. Next action for the new chat (one paragraph I can paste as the first user message)
 10. Do NOT reprint the original 51-site scan tables; one sentence: “scan facts live in the first briefing; 50/51 WP 6.9+; modal Hello+Elementor+Yoast+Rocket+WPE”

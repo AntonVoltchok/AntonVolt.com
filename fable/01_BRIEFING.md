@@ -119,14 +119,26 @@ Tickets:
 
 Duration column is calendar-ish and inflated (`Work hours` often looks like duration×24). Use **counts**, not those hour fields, as demand signal.
 
-Hours model (Fable must guess LOW/MID/HIGH; never treat Zoho hours as truth):
+Hours model (Fable must guess LOW/MID/HIGH; never treat Zoho hours as truth). Three tables — do not mix:
+
+**Table 1 = current offshore (takeover demand).**
 - One Elementor evergreen/program page today: if human does not say otherwise, assume 2–6 hours (layout + nested nav + Yoast).
 - One Elementor layout tweak (footer, whitespace, FAQ color): 0.5–2 hours.
 - Rocket/CTM cache fight: 1–3 hours if it is a rule; 0.2 hours if it is a purge.
 - Recurring “SEO technical optimizations (# of hours)” and sample-report CWV/uptime/robots/sitemap/IndexNow: treat as **padded retainers**, not 30–47 real engineering days. For Table 1, put a small “real incident” guess (e.g. 2–8h/month portfolio) and a separate “what they billed as a bucket” note — do not convert 47 tasks × 30 hours into 1,400h.
+
+**Table 2 = future CLIENT tickets after AdsUp is live** (pages, conversions, leftover incidents). Not the human’s build time.
 - SOP B conversion, first site: wide range (order of 20–60h) because of Theme Builder + forms + tracking. Site 10 with a shared parent theme should be much lower; say so.
 - SOP A new page on a converted ACF theme: should beat today’s Elementor page time; guess 1–3h including QA.
-- Dashboard build is one-time, not monthly. Guess a range and list what is in/out of that range.
+- Residual monitoring/SEO buckets → ~0 billed hours unless red.
+
+**Table 3 = the human’s time to IMPLEMENT AdsUp** (WP admin control room, monitoring, ticketing, purge, plugin diffs). This is what they asked for when they said “how long for me to build what I’m proposing.”
+- Default architecture unless challenged: **buy+glue** — Linear or GitHub for tickets, UptimeRobot/Better Stack for pings, thin custom WP plugin on client WPE for the control room. Custom ticket DB + custom pinger is the expensive fork.
+- Order-of-magnitude (solo + Claude/Cursor, GUESS, not a quote): MVP on ~5 sites (uptime + alerts + ticket webhook + 3-layer purge + Wordfence-gap list) **40–120h**. Full sold spec including staging HTML-diff plugin manager across ~50 sites **150–400h**. Custom pinger/ticket store instead of vendors: add **40–100h**.
+- Plugin staging + HTML diff is the fat row. Uptime via a vendor is a thin row. Do not quote “two weeks for the whole dashboard including HTML diffs.”
+- Calendar ≠ labor: one person part-time. Also give elapsed weeks for MVP vs full.
+- Out of Table 3: 50-site Elementor→ACF conversions (Table 2), monthly client pages (Table 2), padded tech-report chores (die).
+- In/out of each Table 3 row: what is bought, what is a WP admin screen, what is a cron, what still needs a human.
 
 | Class | ~count | After transformation |
 |---|---|---|
