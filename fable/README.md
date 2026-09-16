@@ -9,4 +9,6 @@ Two pieces, not one giant paste:
 
 If it skips the stop and dumps SOPs, send: `Stop. Redo the first reply as Challenges + Questions only, per the prompt.`
 
+At the end of the architecture reply, or whenever you say `handoff`, it must write `CONTINUE_SESSION.md` and paste it in chat. Next Fable thread: attach only that file, paste the “Next action” paragraph from section 8.
+
 Do not attach the xlsx files or the AdsUp report; they are already distilled.

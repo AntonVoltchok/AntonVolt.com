@@ -47,3 +47,30 @@ Hard constraints unless you successfully challenged them and I agreed:
 - NovaMira staging only; no undo; Git + backup first.
 - Prefer ACF PRO if homepages are repeating sections.
 - Executable by a developer, not a strategy essay.
+
+=== HANDOFF FILE (always) ===
+
+You cannot see a precise “85% of my token cap” meter unless the product shows one. Treat it as time to hand off when ANY of these is true:
+- I say `handoff` or `continue file`
+- The UI usage bar is at or above ~85%, or you are warned about context
+- You have finished the second-reply deliverables
+- You are about to write a long section but the thread is already large (SOPs + many Q&A turns)
+
+Then STOP new design work and write one markdown file named `CONTINUE_SESSION.md`. Also paste the full contents in chat so I can copy if download fails.
+
+The file must be enough to start a NEW Fable 5.1 chat with no other attachments except this file. Include:
+
+1. Role + current phase (questions / architecture / SOP A / SOP B / pilot / blocked)
+2. Decisions locked (my answers + your accepted challenges). One line each.
+3. Decisions still open, with your last recommended default
+4. The live architecture (mermaid, current version)
+5. SOP A and SOP B as they stand now (full text, not “see above”)
+6. Pilot 14-day plan if written
+7. Risks and explicit non-goals
+8. Next action for the new chat (one paragraph I can paste as the first user message)
+9. Do NOT reprint the original 51-site scan tables; one sentence: “scan facts live in the first briefing; 50/51 WP 6.9+; modal Hello+Elementor+Yoast+Rocket+WPE”
+
+Next-chat recipe I will use: new Fable 5.1 thread → attach only CONTINUE_SESSION.md → paste section 8.
+
+If I say `handoff` during questions (before SOPs), still write the file: include challenges, unanswered questions, defaults. Skip empty SOP sections rather than inventing them.
+
