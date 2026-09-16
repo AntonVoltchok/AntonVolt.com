@@ -1,9 +1,12 @@
 module.exports = function(grunt) {
+  var sass = require('sass');
+
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
     sass: {
       options: {
+        implementation: sass,
         includePaths: ['bower_components/foundation/scss']
       },
       dist: {
