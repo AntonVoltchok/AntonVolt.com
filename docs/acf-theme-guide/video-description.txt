@@ -1,0 +1,46 @@
+I Built a Custom WordPress Theme With AI (No Page Builder)
+Channel: Ferdy.com | Ferdy Korpershoek
+https://www.youtube.com/watch?v=dXyjzDFSKaw
+
+What if you could build a completely custom WordPress website with AI, without Elementor or any other page builder?
+
+Get NovaMira Pro: https://ferdy.com/novamira
+
+In this step-by-step tutorial, I'll show you how I use Claude Design and Claude Code to create a professional website, turn it into a custom WordPress theme, and make the content easy to manage directly from the WordPress backend.
+
+And this is where it gets really interesting:
+Instead of giving clients access to a page builder where they can accidentally destroy your design, we can create specific editable fields for pages, events, speakers, images, and more.
+
+We can even give different users access to only the parts of WordPress they need. We'll also build functionality directly into the website that could replace some paid WordPress plugins.
+
+In this tutorial, you'll learn how to:
+• Design a professional website using AI
+• Build with Claude Design and Claude Code
+• Turn an HTML website into a custom WordPress theme
+• Connect Claude directly to WordPress
+• Create editable content with ACF
+• Create custom post types for events, sermons, and more
+• Build functionality without relying on a page builder
+• Give clients limited editing permissions
+• Optimize the website for mobile devices
+• Add SEO optimization
+• Connect Google Analytics
+• Set up Google Search Console
+• Turn the finished website into a professional client-ready WordPress website
+
+Timestamps:
+00:00 Intro
+01:41 Create A Claude Account
+05:17 Create The Prompt
+10:04 Improve The Design
+11:36 Make The Website Come Alive
+14:17 Continue The Website In Claude Code
+16:42 Publish Your Website And Go Live
+22:53 Get Novamira
+26:13 Get ACF
+31:24 Turn Your Website Into A WordPress Theme
+38:23 Optimize Your Website For Google
+42:20 Add Google Analytics
+45:17 Add Google Search Console
+47:01 Assign User Roles
+57:22 Thank You
