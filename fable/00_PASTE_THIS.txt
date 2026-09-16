@@ -1,25 +1,49 @@
 Role: Master Architect for a 50+ WordPress behavioral-health marketing portfolio.
 
-Read the attached briefing file once. Do not ask for the raw spreadsheets, the Ferdy transcript, or a plugin dump. Treat the briefing as source of truth.
+Read the attached briefing once. Do not ask for the raw spreadsheets, the Ferdy transcript, or a plugin dump.
 
-You are not designing a generic “WordPress AI agency.” You are designing two build pipelines plus the ops layer that already has a sales shape:
+Facts vs guesses: treat scan results, stack percents, AdsUp ticket rules, and August task counts as facts. Treat pipelines, dashboard-on-WPE, “kill Elementor,” ticket tool, and rollout order as MY GUESSES. You may replace a guess if you have a better idea — but you must say so, why it is better, the tradeoff, and wait for a yes.
 
-A) NEW sites/pages — custom classic PHP theme + ACF + NovaMira/Claude. No Elementor, Bricks, Divi, or Full Site Editor as the layout engine.
-B) CONVERT existing Elementor (and the few WPBakery) sites onto that same ACF+theme model so Claude/NovaMira can edit them later.
+You are not designing a generic WordPress-AI agency. The intended work is two pipelines plus ops:
 
-Ops (do not reinvent): AdsUp-style control room on the CLIENT’s WP Engine account. Tickets fire only on real events. Human signs off. Staging HTML diffs before production plugin updates. NovaMira AI abilities OFF on production.
+A) NEW sites/pages — classic PHP theme + ACF + NovaMira/Claude. Not Elementor/Bricks/Divi/FSE as the layout engine — unless you challenge that and I accept.
+B) CONVERT existing Elementor (and WPBakery outliers) onto that model so Claude/NovaMira can edit later.
 
-Deliver, in this order, nothing else in the first reply:
-1. One-page architecture map (boxes + arrows in mermaid): Ticketing → Dashboard → Staging/NovaMira → Git theme → Production. Label what is human vs automated.
-2. Ticket taxonomy: which August-style tasks DIE (automation), which become a scoped build ticket, which remain incidents. Map each class to pipeline A, pipeline B, or ops-only.
-3. SOP A — New site or new page (numbered, copy-pasteable agent prompts included, 1 page).
-4. SOP B — Elementor → ACF theme conversion (phased, rollback, URL/SEO freeze, when to uninstall Elementor). 1–2 pages.
-5. First 14 days on a single pilot site (name the site type: WP Engine + Hello + Elementor Pro + Yoast + Rocket). No portfolio-wide rollout yet.
-6. Open risks only: PHP not publicly proven; Yonder BH unreachable; NovaMira must never stay ON in prod; cache has three layers (Rocket / WPE / Cloudflare).
+Ops guess: AdsUp-style control room on the CLIENT’s WP Engine account. Tickets only on real events. Human sign-off. Staging HTML diffs before prod plugin updates. NovaMira AI abilities OFF on production.
 
-Constraints:
-- Do not recommend a second page builder.
-- Do not bill uptime, Core Web Vitals, robots.txt, sitemap rebuilds, or IndexNow as monthly labor.
-- Do not assume PHP 8.0+ is proven; WP Engine 7.4 extended support still exists in their 2026 docs. Pilot checks PHP in the WPE portal first.
+=== FIRST REPLY: STOP. Do not write SOPs, mermaid, or a 14-day plan yet. ===
+
+Output only:
+
+1) Challenges (max 7). Each: the guess, why it may be wrong, your alternative, cost/risk, and “I will assume X unless you say otherwise.”
+   Likely worth challenging: one custom theme vs a shared parent theme for 50 sites; ACF vs block theme; convert in place vs new WP install; dashboard on WPE vs MainWP/ManageWP/WP Engine’s own panel; NovaMira on every staging vs one gold image; Forms (Gravity vs Elementor forms vs ACF).
+
+2) Questions (max 10). Numbered. Each must include:
+   - Why it blocks the architecture
+   - 2–4 concrete options (not open-ended)
+   - Your recommended default if I skip it
+   Do not ask things the briefing already answered (WP 6.9+ on 50/51, modal Elementor stack, PHP not proven publicly, Yonder unreachable).
+
+   Ask at least: ticketing system of record; who signs off (me vs client vs offshore); whether ACF PRO is already licensed; whether a shared design system exists or each brand is unique; whether conversion is “looks identical” or “good enough + faster edits”; pilot site name if I have one.
+
+3) A 5-line “if you reply with only ‘go’, I will assume: …” using your defaults.
+
+Then wait. No architecture until I answer or say go.
+
+=== AFTER I ANSWER (second reply only) ===
+
+Then deliver, in order, nothing else:
+1. Architecture map (mermaid): Ticketing → Dashboard → Staging/NovaMira → Git theme → Production. Human vs automated.
+2. Ticket taxonomy from the August classes: die / scoped build / incident. Map to A, B, or ops.
+3. SOP A — new site or new page (numbered, copy-pasteable agent prompts, 1 page).
+4. SOP B — Elementor → ACF conversion (phased, rollback, URL/SEO freeze, when to uninstall Elementor). 1–2 pages.
+5. First 14 days on one pilot (WPE + Hello + Elementor Pro + Yoast + Rocket unless you named a better pilot). No 50-site rollout.
+6. Open risks.
+
+Hard constraints unless you successfully challenged them and I agreed:
+- No second page builder as the layout engine.
+- Do not bill uptime, CWV, robots.txt, sitemap rebuilds, or IndexNow as monthly labor.
+- Do not assume PHP 8.0+; WPE still documents 7.4 extended support. Pilot checks the WPE portal.
+- NovaMira staging only; no undo; Git + backup first.
 - Prefer ACF PRO if homepages are repeating sections.
-- Output must be executable by a developer with NovaMira on staging, not a strategy essay.
+- Executable by a developer, not a strategy essay.

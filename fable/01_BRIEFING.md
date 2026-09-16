@@ -1,6 +1,20 @@
 # Fable briefing (facts only)
 
-Portfolio: ~51 marketing WordPress sites (mostly US addiction/BH, plus billing + one law firm). Agency currently builds in Elementor. Goal: custom theme + ACF + NovaMira/Claude for new work, then convert live Elementor sites to the same model. All ops work starts from tickets. Dashboard lives on the client’s WP Engine account (they own data).
+Portfolio: ~51 marketing WordPress sites (mostly US addiction/BH, plus billing + one law firm). Agency currently builds in Elementor.
+
+## Proven vs guessed
+
+**Proven (do not re-ask):** public scan 2026-09-16; 50/51 have WP 6.9+ Abilities API; modal Hello+Elementor Pro+Yoast+Rocket+WPE; Wordfence uneven; August task mix; AdsUp already defined “tickets only when red” and three cache layers.
+
+**Guessed by the human (challenge if you have a better idea, then wait):**
+- Custom classic PHP theme + ACF is the right end state vs a locked-down block theme or a shared parent theme for all brands.
+- Convert existing Elementor sites in place (staging clone, new theme, then cut over) vs rebuilding on a fresh WP.
+- One dashboard on the client’s WP Engine account vs MainWP / ManageWP / WP Engine portal + a thin ticket layer.
+- NovaMira connected per staging site vs a single gold image that gets copied.
+- All new pages after conversion go through Claude/NovaMira; clients never touch a canvas.
+- Kill Elementor after conversion rather than keep it for one-off landing pages.
+
+If you challenge, recommend a default so work can continue when the human says “go.”
 
 ## What we already proved (2026-09-16 public scan)
 
