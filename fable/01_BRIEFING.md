@@ -119,6 +119,15 @@ Tickets:
 
 Duration column is calendar-ish and inflated (`Work hours` often looks like duration×24). Use **counts**, not those hour fields, as demand signal.
 
+Hours model (Fable must guess LOW/MID/HIGH; never treat Zoho hours as truth):
+- One Elementor evergreen/program page today: if human does not say otherwise, assume 2–6 hours (layout + nested nav + Yoast).
+- One Elementor layout tweak (footer, whitespace, FAQ color): 0.5–2 hours.
+- Rocket/CTM cache fight: 1–3 hours if it is a rule; 0.2 hours if it is a purge.
+- Recurring “SEO technical optimizations (# of hours)” and sample-report CWV/uptime/robots/sitemap/IndexNow: treat as **padded retainers**, not 30–47 real engineering days. For Table 1, put a small “real incident” guess (e.g. 2–8h/month portfolio) and a separate “what they billed as a bucket” note — do not convert 47 tasks × 30 hours into 1,400h.
+- SOP B conversion, first site: wide range (order of 20–60h) because of Theme Builder + forms + tracking. Site 10 with a shared parent theme should be much lower; say so.
+- SOP A new page on a converted ACF theme: should beat today’s Elementor page time; guess 1–3h including QA.
+- Dashboard build is one-time, not monthly. Guess a range and list what is in/out of that range.
+
 | Class | ~count | After transformation |
 |---|---|---|
 | New / evergreen / program pages | 68 | Pipeline A or B-on-converted-theme. Highest value for ACF page templates |
